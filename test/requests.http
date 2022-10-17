@@ -1,0 +1,46 @@
+POST http://localhost:3000/bounty/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "Black Bounty",
+    "contact" : "moi@bountyhunters.com",
+    "description" : "Test bounty",
+    "start" : "1977-04-22T06:00:00Z",
+    "end" : "1978-04-22T06:00:00Z",
+    "reward": 5600
+}
+
+###
+
+GET http://localhost:3000/bounty/ HTTP/1.1
+
+
+###
+
+POST http://localhost:3000/breed/ HTTP/1.1
+content-type: application/json
+
+{
+    "name": "British Shorthair",
+    "description" : "Test"
+}
+
+###
+
+GET http://localhost:3000/breed/ HTTP/1.1
+
+
+###
+
+POST http://localhost:3000/cat/ HTTP/1.1
+content-type: application/json
+
+{
+    "firstName": "John",
+    "lastName" : "Doe"
+}
+
+###
+
+GET http://localhost:3000/cat/ HTTP/1.1
+
